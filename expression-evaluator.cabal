@@ -1,0 +1,26 @@
+cabal-version:      3.4
+name:               expression-evaluator
+version:            0.1.0.0
+license:            MIT
+author:             Samuel de Carvalho
+maintainer:         personal.samuelcarvalho@gmail.com
+-- copyright:
+category:           System
+build-type:         Simple
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable expression-evaluator
+    import:           warnings
+    main-is:          Main.hs
+    other-modules:
+        ArithmeticParser
+        ExpressionEvaluator
+        ExpressionParser
+        ParenthesesParser
+    -- other-extensions:
+    build-depends:    base >= 4.20 && < 4.22
+    hs-source-dirs:   app
+    default-language: Haskell2010
