@@ -1,0 +1,30 @@
+# Build artifacts
+dist/
+dist-newstyle/
+*.hi
+*.o
+
+# Cabal files
+*.cabal.project.local
+
+# GHC environment files
+*.ghc.environment.*
+
+# Stack files (if used)
+.stack-work/
+
+# User-specific files
+*.hs-boot
+
+# Haskell-specific temporary files
+*.tix
+*.prof
+*.log
+*.hpc
+
+# IDE/editor files
+*.swp
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
